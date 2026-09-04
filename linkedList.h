@@ -1,8 +1,6 @@
 #ifndef LINKEDLIST_H     
 #define LINKEDLIST_H
 
-
-
 /*
    
    //  paste this in youtr main loop
@@ -30,17 +28,13 @@
 
    // replace_n_ll(linkedList * list,target,replaced);
    //  now i guess i dont have to say much
-    replace_n_ll(list,50,80);
+   replace_n_ll(list,50,80);
+print_ll(list);
 
-    print_ll(list);
-   
-    // this function will just add in front like it will point new  node and the old one will be
-    //  pointed by new it needs a temprorary node which is also usefull 
-    add_infron_ll(list,1);
-
-    print_ll(list);
-
-
+// this function will just add in front like it will point new  node and the old one will be
+//  pointed by new it needs a temprorary node which is also usefull 
+//add_infron_ll(list,1);
+print_ll(list);
 
 */
 
@@ -100,7 +94,6 @@ void back_ll(linkedList * list, int data)
 
     list->size++;
 }
-
 void print_ll(linkedList *list)
 {
     Node *n = list->head;
