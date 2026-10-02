@@ -1,6 +1,9 @@
 #ifndef LINKEDLIST_H     
 #define LINKEDLIST_H
 
+#include <stdio.h>
+#include <stdlib.h>
+
 /*
    
    //  paste this in youtr main loop

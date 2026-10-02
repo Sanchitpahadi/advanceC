@@ -3,7 +3,7 @@
 
     typedef struct Vector
     { 
-        int capacity ;
+        int capacity;
         struct core * c;
         struct Vector * next;
     }Vector;
@@ -58,6 +58,7 @@ int main()
     v4->c = &c4;
 
     v1->next = v2;
+    v1->capacity ++;
     v2->next = v3;
     v3->next = v4;
     v4->next = NULL;

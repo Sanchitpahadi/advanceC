@@ -6,7 +6,7 @@
 
 /*
   //hash table was a lil bit of hard to visualize concept 
-  //after writting this code the tihngs came into my mind s
+  //after writting this code the tihngs came into my mind
   // so dont for got to include stdio.h stlib.h and string.h
 
     hashTable *ht = ht_create();
