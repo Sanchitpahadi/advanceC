@@ -1,7 +1,10 @@
-#ifndef HASH_TABLE_H
-#define HASH_TABLE_H
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
 
 #define TABLE_SIZE 22
+
 
 
 /*
@@ -133,4 +136,3 @@ void ht_print(hashTable*ht)
 
 
 
-#endif

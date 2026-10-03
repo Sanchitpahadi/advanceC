@@ -1,14 +1,26 @@
 #ifndef TREE_H
 #define TREE_H
 
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
 /*
 //be carefull its quite hard make sure u go slow and 
 // keep  a  notecopy to make sure u are doing it right
 
-    Node *root = NULL;
+
+    #include "tree.h"
+
+
+
+int main()
+{
+
+  Node *root = NULL;
   
 
-    for(int i =0 ; i <20;i++)
+    for(int i =0 ; i <200;i++)
     {
     root =  insert_t(root,i);
     }
@@ -18,9 +30,13 @@
     root =delete_tn(root,16);
     root =delete_tn(root,17);
 
-    printf(" if find print 1 %d",found);
+    printf(" if find print 19 %d \n",found);
     
     inorder(root);
+
+
+    return 0;
+}
 
 
 
