@@ -1,0 +1,69 @@
+#include<stdio.h>
+#include<stdlib.h>
+
+    typedef struct Vector
+    { 
+        int capacity;
+        struct core * c;
+        struct Vector * next;
+    }Vector;
+
+    struct core_i
+    {
+        int x;
+        int y;
+    };
+
+
+    int main()
+    {
+        struct core_i c1 = {4,8};
+        struct core_i c2 = {5,9};
+        struct core_i c3 = {6,10};
+        struct core_i c4 = {7,11};
+
+        Vector* v1 = (Vector *) malloc(sizeof(Vector));
+        Vector* v2 = (Vector *) malloc(sizeof(Vector));
+        Vector* v3 = (Vector *) malloc(sizeof(Vector));
+        Vector* v4 = (Vector *) malloc(sizeof(Vector));
+
+        v1->c = &c1;
+        v2->c = &c2;
+        v3->c = &c3;
+        v4->c = &c4;
+
+        v1->next = v2;
+        v1->capacity ++;
+        v2->next = v3;
+        v3->next = v4;
+        v4->next = NULL;
+
+
+        printf("%d ,", v1->c->x);
+        printf("%d\n", v1->c->y); 
+
+        if(v1->next != NULL)
+        {
+            printf("%d ,", v1->next->c->x);
+            printf("%d\n", v1->next->c->y);
+
+        }
+        if(v2->next != NULL)
+        {
+            printf("%d ,", v2->next->c->x);
+            printf("%d\n", v2->next->c->y);
+
+        }
+        if(v3->next != NULL)
+        {
+            printf("%d ,", v3->next->c->x);
+            printf("%d\n", v3->next->c->y);
+
+        }
+        free(v1);
+        free(v2);
+        free(v3);
+        free(v4);
+
+        return 0;
+    }
